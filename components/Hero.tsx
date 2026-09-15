@@ -17,7 +17,18 @@ export default function Hero() {
       <div className="hero-marker hero-marker--side" aria-hidden="true">JAKARTA · INDONESIA</div>
       <div className="hero-content shell">
         <p className="eyebrow hero-eyebrow">INTERIOR · FURNITURE · BUILD</p>
-        <h1>Ruang yang Dirancang<br />untuk Hidup <em>Lebih Baik.</em></h1>
+        <h1 aria-label="Ruang yang Dirancang untuk Hidup Lebih Baik.">
+          <span className="hero-title-desktop" aria-hidden="true">
+            <span>Ruang yang Dirancang</span>
+            <span>untuk Hidup <em>Lebih Baik.</em></span>
+          </span>
+          <span className="hero-title-mobile" aria-hidden="true">
+            <span>Ruang yang</span>
+            <span>Dirancang</span>
+            <span>untuk Hidup</span>
+            <span><em>Lebih Baik.</em></span>
+          </span>
+        </h1>
         <div className="hero-bottom">
           <div className="hero-copy">
             <p>Kami membantu mewujudkan interior hunian dan ruang bisnis melalui desain yang fungsional, detail yang terukur, dan pengerjaan yang terintegrasi.</p>

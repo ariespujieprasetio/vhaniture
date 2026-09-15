@@ -68,6 +68,8 @@ h1 em, h2 em { font-weight: 400; }
 .hero-eyebrow { opacity: .8; margin-bottom: 26px; animation: introUp .8s .18s both; }
 .hero h1 { max-width: 1120px; margin: 0; font-size: clamp(64px, 8.35vw, 130px); line-height: .79; animation: introUp 1s .28s both; }
 .hero h1 em { display: inline-block; }
+.hero-title-desktop, .hero-title-desktop > span { display: block; }
+.hero-title-mobile { display: none; }
 .hero-bottom { margin-top: 50px; padding-top: 30px; border-top: 1px solid rgba(255,255,255,.45); display: flex; align-items: flex-end; justify-content: space-between; gap: 40px; animation: introUp .8s .48s both; }
 .hero-copy { display: flex; gap: 50px; align-items: flex-end; }
 .hero-copy > p { width: min(100%, 460px); margin: 0; color: rgba(255,255,255,.82); font-size: 13px; line-height: 1.8; }
@@ -237,7 +239,7 @@ h1 em, h2 em { font-weight: 400; }
   .hero-marker--side { display: none; }
   .hero-shade { background: linear-gradient(90deg, rgba(11,13,11,.67), rgba(11,13,11,.23)), linear-gradient(0deg, rgba(10,12,10,.76), transparent 65%); }
   .hero-content { padding-bottom: 70px; }
-  .hero h1 { font-size: clamp(58px, 13.7vw, 96px); line-height: .84; }
+  .hero h1 { font-size: clamp(58px, 13.7vw, 96px); line-height: 1; }
   .hero-bottom { margin-top: 40px; }
   .scroll-cue { display: none; }
   .about { grid-template-columns: 1fr; gap: 75px; }
@@ -294,8 +296,11 @@ h1 em, h2 em { font-weight: 400; }
   .hero { min-height: 100svh; }
   .hero-image { object-position: 61% center; }
   .hero-content { padding-bottom: 42px; }
-  .hero h1 { font-size: clamp(51px, 14.5vw, 70px); line-height: .84; }
-  .hero h1 br { display: none; }
+  .hero h1 { font-size: clamp(47px, 12.7vw, 61px); line-height: 1.08; letter-spacing: -.03em; }
+  .hero-title-desktop { display: none; }
+  .hero-title-mobile { display: flex; flex-direction: column; align-items: flex-start; gap: 8px; }
+  .hero-title-mobile > span { display: block; line-height: .92; white-space: nowrap; }
+  .hero h1 em { display: inline; }
   .hero-eyebrow { max-width: 240px; }
   .hero-marker--top { display: none; }
   .hero-bottom { padding-top: 22px; margin-top: 32px; }
